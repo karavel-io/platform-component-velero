@@ -1,7 +1,7 @@
 # Velero Component
 
-![Component version](https://img.shields.io/badge/dynamic/yaml?color=blue&label=component+version&query=$.entries.velero[0].version&url=https%3A%2F%2Fcharts.mikamai.com%2Fkaravel%2Findex.yaml&style=for-the-badge)
-[![Velero version](https://img.shields.io/badge/dynamic/yaml?color=blue&label=velero+version&query=$.entries.velero[0].appVersion&url=https%3A%2F%2Fcharts.mikamai.com%2Fkaravel%2Findex.yaml&style=for-the-badge)](https://velero.io/)
+![Component version](https://img.shields.io/badge/dynamic/yaml?color=blue&label=component+version&query=$.entries.velero[0].version&url=https%3A%2F%2Frepository.platform.karavel.io%2Funstable%2Findex.yaml&style=for-the-badge)
+[![Velero version](https://img.shields.io/badge/dynamic/yaml?color=blue&label=velero+version&query=$.entries.velero[0].appVersion&url=https%3A%2F%2Frepository.platform.karavel.io%2Funstable%2Findex.yaml&style=for-the-badge)](https://velero.io/)
 [Documentation](https://docs.karavel.io/components/velero)
 
 ## Overview
