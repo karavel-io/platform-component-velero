@@ -1,4 +1,4 @@
-site_name: Velero Component
+site_name: components/velero
 site_url: https://docs.karavel.io/components/velero
 repo_name: projectkaravel/platform-component-velero
 repo_url: https://github.com/projectkaravel/platform-component-velero
