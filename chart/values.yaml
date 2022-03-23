@@ -38,3 +38,8 @@ credentialsSecret:
   property: ""
 
 credentialsPath:
+
+plugins:
+  - name: aws
+    image: velero/velero-plugin-for-aws
+    tag: v1.3.0

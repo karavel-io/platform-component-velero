@@ -25,12 +25,14 @@ spec:
       restartPolicy: Always
       serviceAccountName: {{ include "velero.name" . }}
       initContainers:
-        - name: velero-plugin-for-aws
-          image: velero/velero-plugin-for-aws:v1.1.0
+        {{- range .Values.plugins }}
+        - name: velero-plugin-for-{{ .name }}
+          image: "{{ .image }}:{{ .tag }}"
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - mountPath: /target
               name: plugins
+        {{- end }}
       containers:
         - name: velero
           image: "velero/velero:v{{ .Chart.AppVersion }}"

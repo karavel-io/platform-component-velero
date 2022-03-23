@@ -67,6 +67,17 @@ component "velero" {
   # this overrides credentialsSecret but is overridden by accessKeySecret/secretKeySecret
   # note that you'll have to manually mount the file at this location
   credentialsPath = ""
+  
+  # optional, list of Velero plugins to include
+  # note that if you want to add plugins while keeping the default AWS one you have to copy it again, 
+  # because the list would be overridden
+  plugins = [
+    {
+      name = "aws",
+      image = "velero/velero-plugin-for-aws",
+      tag = "v1.3.0",
+    }
+  ]
 }
 ```
 
