@@ -25,8 +25,18 @@ component "velero" {
       bucket = ""          # required, bucket name
       prefix = ""          # optional, prefix/directory to upload backups into
       caCert = ""          # optional, base64 encoded CA bundle to be used for verifying TLS connections
-      accessKeySecret = "" # optional, AWS Access key ID to access the bucket (overrides credentialsSecret/credentialsPath)
-      secretKeySecret = "" # optional, AWS Secret access key to access the bucket (overrides credentialsSecret/credentialsPath)
+
+      # optional, secret ref to AWS Access key ID (overrides credentialsSecret/credentialsPath)
+      accessKeySecret = {
+        name = "" # required, name of the secret object
+        key = ""  # required, key containing the Access key ID
+      }
+
+      # optional, secret ref to AWS Secret access key (overrides credentialsSecret/credentialsPath)
+      secretKeySecret = {
+        name = "" # required, name of the secret object
+        key = ""  # required, key containing the Secret access key
+      }
     }
   }
 
