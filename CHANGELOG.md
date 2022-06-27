@@ -7,9 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2022-06-27
+
+### Added
+
+- Added default namespace (requires [Karavel CLI 0.4+](https://github.com/karavel-io/cli/releases/latest))
+
 ## [1.0.0] - 2022-03-22
 
 Initial release
 
-[unreleased]: https://github.com/karavel-io/platform-component-velero/compare/1.0.0...HEAD
+[unreleased]: https://github.com/karavel-io/platform-component-velero/compare/1.1.0...HEAD
+[1.1.0]: https://github.com/karavel-io/platform-component-velero/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/karavel-io/platform-component-velero/releases/tag/1.0.0
