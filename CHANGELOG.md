@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added default namespace (requires [Karavel CLI 0.4+](https://github.com/karavel-io/cli/releases/latest))
 
+### Changed
+
+- Bumped Velero to 1.9.0
+
 ## [1.0.0] - 2022-03-22
 
 Initial release
